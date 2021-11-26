@@ -1,0 +1,161 @@
+<!-- © David Lindholm - me@davidlindholm.info
+     License: GNU Affero General Public License v3.0
+     Legal: https://www.gnu.org/licenses/agpl-3.0.en.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Game Boy (DMG)</title>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <link href="gameboy.css" rel="stylesheet" type="text/css" />
+    <link href="cart.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <section id="mainbody">
+      <!-- Riller -->
+      <section id="horizgroove"></section>
+      <section id="leftnotch" class="topnotches"></section>
+      <section id="rightnotch" class="topnotches"></section>
+      <section id="onoffnotches">
+        <section class="mininotch mininotchtop"></section>
+        <section class="mininotch mininotchtop"></section>
+        <section class="mininotch mininotchtop"></section>
+      </section>
+      <section id="phonesnotches">
+        <section class="mininotch mininotchbottom"></section>
+        <section class="mininotch mininotchbottom"></section>
+        <section class="mininotch mininotchbottom"></section>
+      </section>
+      <!-- Tekst øverst på konsollen -->
+      <section id="onofftext">
+        <p>&#9664;</p>
+        <p>OFF&#8226;ON</p>
+        <p>&#9654;</p>
+      </section>
+      <section id="phonestext">
+        <p>PHONES</p>
+      </section>
+      <!-- Skærm -->
+      <section id="screenborder">
+        <section id="pinkbar" class="colorbar"></section>
+        <section id="bluebar" class="colorbar"></section>
+        <p class="bordertext">&nbsp;DOT MATRIX WITH STEREO SOUND&nbsp;</p>
+        <section id="screen">
+        </section>
+        <section id="powerled">
+          <p class="bordertext">BATTERY</p>
+        </section>
+      </section>
+      <!-- Branding -->
+      <section id="consolenametext">
+        <p id="nintendo">Nintendo</p>
+        <p>GAME BOY</p>
+        <p id="tm">TM</p>
+      </section>
+      <!-- A + B knapper -->
+      <section id="abbuttonarea">
+        <section id="abutton" class="roundbutton">
+          <p>A</p>
+        </section>
+        <section id="bbutton" class="roundbutton">
+          <p>B</p>
+        </section>
+      </section>
+      <!-- Start + Select knapper -->
+      <section id="startbuttonindent" class="startselectindents">
+        <section class="startselect">
+          <p>START</p>
+        </section>
+      </section>
+      <section id="selectbuttonindent" class="startselectindents">
+        <section class="startselect">
+          <p>SELECT</p>
+        </section>
+      </section>
+      <!-- D-pad -->
+      <section id="dpadindent">
+        <section id="dpadtop" class="dpad">
+          <section class="dpadgroove"></section>
+          <section class="dpadgroove"></section>
+          <section class="dpadgroove"></section>
+        </section>
+        <section id="dpadleft" class="dpad">
+          <section class="dpadgroove"></section>
+          <section class="dpadgroove"></section>
+          <section class="dpadgroove"></section>
+        </section>
+        <section id="dpadright" class="dpad">
+          <section class="dpadgroove"></section>
+          <section class="dpadgroove"></section>
+          <section class="dpadgroove"></section>
+        </section>
+        <section id="dpadbottom" class="dpad">
+          <section class="dpadgroove"></section>
+          <section class="dpadgroove"></section>
+          <section class="dpadgroove"></section>
+        </section>
+        <section id="dpadmid" class="dpad">
+          <section id="dpadcircle"></section>
+        </section>
+      </section>
+      <!-- Højttalerriller -->
+      <section id="speaker">
+        <section class="speakergrill"></section>
+        <section class="speakergrill">
+          <section class="speakergrilldark"></section>
+        </section>
+        <section class="speakergrill">
+          <section class="speakergrilldark"></section>
+        </section>
+        <section class="speakergrill">
+          <section class="speakergrilldark"></section>
+        </section>
+        <section class="speakergrill">
+          <section class="speakergrilldark"></section>
+        </section>
+        <section class="speakergrill">
+          <section class="speakergrilldark"></section>
+        </section>
+      </section>
+    </section>
+    <!-- Workaround til spillets hjørne -->
+    <section id="carttop"></section>
+    <!-- Spil main -->
+    <section id="cartbody">
+      <!-- Mere workaround til spillets hjørne -->
+      <section id="cornerborder"></section>
+      <!-- Spilriller -->
+      <section id="topgrooves">
+        <section class="groove"></section>
+        <section class="groove"></section>
+        <section class="groove"></section>
+        <section class="groove"></section>
+        <section class="groove"></section>
+      </section>
+
+      <!-- Spil branding -->
+      <section id="brandindent">
+        <section id="cartnametext">
+          <p>Nintendo</p>
+          <p>GAME BOY</p>
+          <p>TM</p>
+        </section>
+      </section>
+
+      <!-- Spil etiket -->
+      <section id="labelindent">
+        <section id="label">
+        </section>
+      </section>
+
+      <!-- Indsætningspil -->
+      <section id="arrowcontainer">
+        <svg height="25" width="40">
+          <polygon id="arrow" points="0,0 40,0 20,25" />
+        </svg>
+      </section>
+    </section>
+  </body>
+</html>

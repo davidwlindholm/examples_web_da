@@ -1,0 +1,138 @@
+/**
+ * © David Lindholm - me@davidlindholm.info
+ * License: GNU Affero General Public License v3.0
+ * Legal: https://www.gnu.org/licenses/agpl-3.0.en.html
+ */
+
+body {
+  --cart-color: rgb(189, 190, 189);
+  --cart-color-dark: rgb(162, 163, 162);
+  --cart-color-darker: rgb(124, 126, 124);
+}
+
+#cartbody {
+  position: fixed;
+  background-color: var(--cart-color);
+  height: 265px;
+  width: 240px;
+  margin-left: 500px;
+  margin-top: 50px;
+  border-width: 2px;
+  border-style: hidden groove groove groove;
+  border-color: var(--cart-color);
+  box-shadow: 5px 5px #00000060;
+  border-radius: 0px 5px 0px 0px;
+}
+
+#carttop {
+  position: fixed;
+  background-color: var(--cart-color);
+  height: 15px;
+  width: 220px;
+  margin-left: 500px;
+  margin-top: 33px;
+  border-width: 2px;
+  border-color: var(--cart-color);
+  border-style: groove groove hidden groove;
+  border-radius: 5px 5px 0px 0px;
+}
+
+#cornerborder {
+  position: fixed;
+  background-color: var(--cart-color);
+  height: 5px;
+  width: 20px;
+  border-width: 2px;
+  border-color: var(--cart-color);
+  border-style: groove groove hidden hidden;
+  border-radius: 0px 5px 0px 0px;
+  margin-left: 220px;
+}
+
+#topgrooves {
+  margin-top: 8px;
+}
+
+.groove {
+  position: relative;
+  margin-top: 3px;
+  margin-left: 0px;
+  width: 242px;
+  height: 2px;
+  background-color: var(--cart-color-dark);
+  border-style: groove hidden groove hidden;
+  border-color: var(--cart-color-dark);
+  border-width: 1px;
+}
+
+/* Spil branding */
+#brandindent {
+  position: fixed;
+  height: 50px;
+  width: 200px;
+  background-image: radial-gradient(var(--cart-color-dark) 2%,var(--cart-color) 98%);
+  border-radius: 25px;
+  margin-top: -41px;
+  margin-left: 20px;
+  border: 1px ridge var(--cart-color-dark);
+}
+
+#cartnametext {
+  margin-top: 13px;
+  margin-left: 16px;
+}
+
+#cartnametext p {
+  display: inline;
+  font-family: sans-serif;
+  color: var(--cart-color);
+  text-shadow: 1px 1px rgb(124, 124, 124);
+}
+
+#cartnametext p:nth-child(1) {
+  font-size: 9pt;
+  font-weight: bolder;
+}
+
+#cartnametext p:nth-child(2) {
+  font-size: 15pt;
+  margin-left: -3px;
+}
+
+#cartnametext p:nth-child(3) {
+  font-size: 5pt;
+  font-weight: bold;
+  margin-left: -6px;
+}
+
+#labelindent {
+  position: fixed;
+  height: 170px;
+  width: 190px;
+  border: 1px ridge var(--cart-color-dark);
+  border-radius: 5px;
+  margin-top: 16px;
+  margin-left: 25px;
+}
+
+#label {
+  position: fixed;
+
+  height: 164px;
+  width: 184px;
+  margin: 3px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+#arrowcontainer {
+  margin-left: 100px;
+  margin-top: 194px;
+}
+
+#arrow {
+  stroke-width: 1;
+  stroke: var(--cart-color-darker);
+  stroke-linecap: round;
+  fill: rgb(184, 182, 182);
+}

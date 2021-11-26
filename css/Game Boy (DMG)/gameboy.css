@@ -1,0 +1,463 @@
+/**
+ * © David Lindholm - me@davidlindholm.info
+ * License: GNU Affero General Public License v3.0
+ * Legal: https://www.gnu.org/licenses/agpl-3.0.en.html
+ */
+
+/* Baggrund */
+body {
+  background-color: rgb(222, 184, 135);
+}
+
+/* Spilkonsol main */
+#mainbody {
+  background-image: linear-gradient(-30deg, rgb(236, 236, 214) 10%,rgb(236, 236, 214) 1%, rgb(245, 245, 220) 0);
+  height: 740px;
+  width: 450px;
+  border: 2px groove beige;
+  border-radius: 20px 20px 100px 20px;
+  position: fixed;
+  box-shadow: 10px 10px #00000060;
+}
+
+/* Spilkonsol main - Riller */
+#horizgroove {
+  position: fixed;
+  margin-top: 28px;
+  margin-left: -1px;
+  width: 450px;
+  height: 2px;
+  background-color: rgb(226, 226, 213);
+  border-style: groove hidden groove hidden;
+  border-color: rgb(245, 245, 220);
+  border-width: 1px;
+}
+
+.topnotches {
+  position: fixed;
+  width: 2px;
+  height: 29px;
+  background-color: rgb(226, 226, 213);
+  border-style: groove groove hidden groove;
+  border-color: rgb(245, 245, 220);
+  border-width: 1px;
+}
+
+#leftnotch {
+  margin-top: -1px;
+  margin-left: 30px;
+}
+
+#rightnotch {
+  margin-top: -1px;
+  margin-left: 420px;
+}
+
+.mininotch {
+  position: fixed;
+  width: 3px;
+  background-color: rgb(226, 226, 213);
+  border-style: hidden;
+  border-left-style: groove;
+  border-right-style: groove;
+  border-color: rgb(245, 245, 220);
+  border-width: 1px;
+  z-index: 2;
+}
+
+.mininotchtop {
+  height: 7px;
+  margin-top: -1px;
+}
+
+.mininotchbottom {
+  height: 11px;
+  margin-top: 731px;
+}
+
+#onoffnotches .mininotch:nth-child(1) {
+  margin-left: 54px;
+}
+
+#onoffnotches .mininotch:nth-child(2) {
+  margin-left: 60px;
+}
+
+#onoffnotches .mininotch:nth-child(3) {
+  margin-left: 66px;
+}
+
+#phonesnotches .mininotch:nth-child(1) {
+  margin-left: 203px;
+}
+
+#phonesnotches .mininotch:nth-child(2) {
+  margin-left: 209px;
+}
+
+#phonesnotches .mininotch:nth-child(3) {
+  margin-left: 215px;
+}
+
+/* Spilkonsol main - Tekst */
+#onofftext {
+  margin-top: 4px;
+  margin-left: 47px;
+  height: 17px;
+  width: 70px;
+  text-align: center;
+  border-radius: 10px;
+  position: fixed;
+  color: rgb(245, 245, 220);
+  font-family: sans-serif;
+  font-size: 9pt;
+  background-color: rgb(226, 226, 213);
+  border: 2px ridge rgb(245, 245, 220);
+  text-shadow: 1px 1px rgb(189, 183, 183);
+}
+
+#onofftext p {
+  float: left;
+  margin-top: 0px;
+  margin-left: 1px;
+}
+
+#onofftext p:nth-child(2) {
+  margin-top: 1px;
+}
+
+#phonestext {
+  margin-top: 710px;
+  margin-left: 155px;
+  height:18px;
+  width: 70px;
+  text-align: center;
+  border-radius: 10px;
+  position: fixed;
+  color: rgb(245, 245, 220);
+  font-family: sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+  background-color: rgb(226, 226, 213);
+  border: 2px ridge rgb(226, 226, 213);
+  text-shadow: 1px 1px rgb(189, 183, 183);
+}
+
+#phonestext p {
+  margin-top: 3px;
+}
+
+/* Grå skærmkant */
+#screenborder {
+  background-color: rgb(169, 169, 169);
+  height: 310px;
+  width: 387px;
+  position: fixed;
+  margin-left: 35px;
+  margin-top: 45px;
+  border: 2px groove rgb(169, 169, 169);
+  border-radius: 15px 15px 70px 15px;
+}
+
+/* Skærmposition + design */
+#screen {
+  background-color: rgb(217, 165, 32);
+  height: 230px;
+  width: 230px;
+  margin-left: 81px;
+  margin-top: 43px;
+  position: fixed;
+  border: 3px groove rgb(202, 157, 42);
+}
+
+/* Power LED design + position */
+#powerled {
+  background-color: rgb(107, 93, 94);
+  height: 10px;
+  width: 10px;
+  margin-left: 32px;
+  margin-top: 100px;
+  position: fixed;
+  border: 3px groove rgb(90, 72, 74);
+  border-radius: 8px;
+}
+
+/* Kanttekst generelt */
+.bordertext {
+  color: white;
+  background-color: rgb(169, 169, 169);
+  font-size: 9pt;
+  font-family: monospace;
+  position: fixed;
+}
+
+/* Batteritekst */
+#powerled p {
+  font-weight: bold;
+  margin-left: -18px;
+  margin-top: 16px;
+  position: fixed;
+}
+
+/* Dot matrix tekst */
+#screenborder > p {
+  margin-left: 108px;
+  margin-top: 13px;
+}
+
+/* Pink/blå streger */
+.colorbar {
+  height: 4px;
+  width: 368px;
+  position: fixed;
+  margin-left: 10px;
+}
+
+#pinkbar {
+  background-color: rgb(168, 14, 148);
+  margin-top: 14px;
+}
+
+#bluebar {
+  background-color: rgb(29, 14, 168);
+  margin-top: 22px;
+}
+
+/* A + B knapper nedsænket område */
+#abbuttonarea {
+  width: 155px;
+  height: 70px;
+  margin-top: 440px;
+  margin-left: 260px;
+  background-image: radial-gradient(rgb(226, 226, 213) 15%, rgb(236, 236, 214) 85%);
+  border-radius: 40px;
+  position: fixed;
+  transform: rotate(-25deg);
+}
+
+/* A knap position */
+#abutton {
+  margin-left: 88px;
+}
+
+/* B knap position */
+#bbutton {
+  margin-left: 13px;
+}
+
+/* A + B tekst position + design */
+#abbuttonarea p {
+  margin-left: 20px;
+  margin-top: 63px;
+  color: rgb(13, 36, 241);
+  font-size: 13pt;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+/* A + B knap design */
+.roundbutton {
+  margin-top: 8px;
+  background-color: rgba(141, 10, 21, 0.897);
+  width: 50px;
+  height: 50px;
+  border: 3px groove rgba(109, 6, 15, 0.897);
+  border-radius: 30px;
+  position: fixed;
+}
+
+/* Start + Select knapper */
+.startselectindents {
+  width: 72px;
+  height: 27px;
+  background-color: rgb(226, 226, 213);
+  border-radius: 15px;
+  position: fixed;
+  transform: rotate(-25deg);
+}
+
+.startselect {
+  width: 60px;
+  height: 15px;
+  background-color: rgb(136, 135, 135);
+  border-radius: 10px;
+  border: 2px groove rgb(105, 105, 105);
+  position: fixed;
+  margin-left: 4px;
+  margin-top: 4px;
+}
+
+#startbuttonindent {
+  margin-top: 590px;
+  margin-left: 200px;
+}
+
+#selectbuttonindent {
+  margin-top: 590px;
+  margin-left: 115px;
+}
+
+.startselectindents p {
+  margin-top: 22px;
+  color: rgb(13, 36, 241);
+  text-align: center;
+  font-size: 10pt;
+  font-family: monospace;
+  font-weight: bolder;
+}
+
+/* D-pad */
+#dpadindent {
+  height: 120px;
+  width: 120px;
+  background-image: radial-gradient(rgb(226, 226, 213) 15%, rgb(236, 236, 214) 85%);
+  border-radius: 60px;
+  margin-top: 430px;
+  margin-left: 20px;
+  position: fixed;
+}
+
+.dpad {
+  height: 30px;
+  width: 30px;
+  background-color: black;
+  position: fixed;
+  border: 4px groove #535353;
+  border-radius: 5px;
+}
+
+#dpadmid {
+  margin-top: 43px;
+  margin-left: 43px;
+  border: 4px solid black;
+}
+
+#dpadtop {
+  margin-top: 15px;
+  margin-left: 43px;
+  border-bottom-style: none;
+}
+
+#dpadbottom {
+  margin-top: 75px;
+  margin-left: 43px;
+  border-top-style: none;
+}
+
+#dpadright {
+  margin-top: 43px;
+  margin-left: 75px;
+  border-left-style: none;
+}
+
+#dpadleft {
+  margin-top: 43px;
+  margin-left: 15px;
+  border-right-style: none;
+}
+
+.dpadgroove {
+  width: 1px;
+  height: 20px;
+  background-color: black;
+  border: 3px ridge rgb(46, 46, 46);
+  margin-top: 4px;
+}
+
+#dpadleft .dpadgroove {
+  float: left;
+  margin-left: 1px;
+}
+
+#dpadright .dpadgroove {
+  float: right;
+  margin-right: 1px;
+}
+
+#dpadtop .dpadgroove, #dpadbottom .dpadgroove {
+  transform: rotate(90deg);
+  margin-left: 12px;
+  position: fixed;
+}
+
+#dpadtop .dpadgroove:nth-child(1) {
+  margin-top: -7px;
+}
+
+#dpadtop .dpadgroove:nth-child(2) {
+  margin-top: 1px;
+}
+
+#dpadtop .dpadgroove:nth-child(3) {
+  margin-top: 9px;
+}
+
+#dpadbottom .dpadgroove:nth-child(1) {
+  margin-top: -2px;
+}
+
+#dpadbottom .dpadgroove:nth-child(2) {
+  margin-top: 5px;
+}
+
+#dpadbottom .dpadgroove:nth-child(3) {
+  margin-top: 13px;
+}
+
+#dpadcircle {
+  height: 22px;
+  width: 22px;
+  border: 3px groove rgb(46, 46, 46);
+  border-radius: 15px;
+  position: fixed;
+  margin-top: 1px;
+  margin-left: 1px;
+}
+
+/* Konsol branding tekst */
+#consolenametext {
+  position: fixed;
+  color: rgb(13, 36, 241);
+  font-family: sans-serif;
+  font-size: 18pt;
+  margin-top: 362px;
+  margin-left: 35px;
+}
+
+#consolenametext p {
+  display: inline;
+  margin-left: -4px;
+}
+
+#nintendo {
+  font-size: 12pt;
+  font-weight: bolder;
+}
+
+#tm {
+  font-size: 7pt;
+  font-weight: bold;
+}
+
+/* Højttalerriller */
+#speaker {
+  margin-top: 610px;
+  margin-left: 245px;
+  transform: rotate(-30deg);
+}
+
+.speakergrill {
+  height: 90px;
+  width: 7px;
+  background-color: rgb(211, 211, 200);
+  border-radius: 8px;
+  border: 1px groove rgb(196, 196, 186);
+  float: left;
+  margin-left: 17px;
+}
+
+.speakergrilldark {
+  height: 74px;
+  width: 1px;
+  background-color: black;
+}
