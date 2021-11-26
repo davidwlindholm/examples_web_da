@@ -47,7 +47,8 @@ Simpelt eksempel på hvordan CSS kan bruges til at lave kasser på en hjemmeside
 [Kode](https://github.com/davidwlindholm/examples_web_da/tree/main/css/CSS%20Boxes)
 
 #### Game Boy (DMG)
-Avanceret eksempel på brug af CSS til at lave et billede af en Game Boy spillekonsol.
+Avanceret eksempel på brug af CSS til at lave et billede af en Game Boy spillekonsol og et spil.
+Inkluderer et meget lille stykke JS kode til at "tænde" og "slukke" maskinen, ved tryk på dioden. 
 
 [Kode](https://github.com/davidwlindholm/examples_web_da/tree/main/css/Game%20Boy%20(DMG))
 
