@@ -48,11 +48,23 @@ Simpelt eksempel på hvordan CSS kan bruges til at lave kasser på en hjemmeside
 
 #### Game Boy (DMG)
 Avanceret eksempel på brug af CSS til at lave et billede af en Game Boy spillekonsol og et spil.
-Inkluderer et meget lille stykke JS kode til at "tænde" og "slukke" maskinen, ved tryk på dioden. 
+Inkluderer et meget lille stykke JS kode til at "tænde" og "slukke" maskinen, ved tryk på dioden.
 
 [Kode](https://github.com/davidwlindholm/examples_web_da/tree/main/css/Game%20Boy%20(DMG))
 
 ## JavaScript
+
+#### Quick Math
+Simpelt eksempel på at hente data fra to inputfelter og foretage en beregning der også vises på siden.
+Aktiveret ved tryk på en knap.
+
+[Kode](https://github.com/davidwlindholm/examples_web_da/tree/main/javascript/QuickMath)
+
+#### Less Quick Math
+Mere detaljeret version af Quick Math der benytter funktioners parametre til at vælge hvilken regneoperation
+der skal foretages.
+
+[Kode](https://github.com/davidwlindholm/examples_web_da/tree/main/javascript/LessQuickMath)
 
 #### Pythagoras
 Simpelt eksempel på en lommeregner der kan beregne hypotenusen ud fra to kateter.
