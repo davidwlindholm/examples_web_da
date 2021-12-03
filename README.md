@@ -70,3 +70,13 @@ der skal foretages.
 Simpelt eksempel på en lommeregner der kan beregne hypotenusen ud fra to kateter.
 
 [Kode](https://github.com/davidwlindholm/examples_web_da/tree/main/javascript/Pythagoras)
+
+#### Class Manager
+Eksempel på at tilføje og fjerne CSS klasser med JavaScript
+
+[Kode](https://github.com/davidwlindholm/examples_web_da/tree/main/javascript/ClassManager)
+
+#### Class Manager Advanced
+Videreudvikling af Class Manager, som tilføjer en klasse baseret på om en anden klasse findes på samme element.
+
+[Kode](https://github.com/davidwlindholm/examples_web_da/tree/main/javascript/ClassManagerAdvanced)
