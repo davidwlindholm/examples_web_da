@@ -4,19 +4,25 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Quick Math</title>
     <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <form action="">
+    <form onsubmit="regn(); return false">
       <label for="tal1">Tal 1:</label>
-      <input id="tal1" type="text" name="tal1"><br>
+      <input id="tal1" type="text" name="tal1" />
+
+      <p>+</p>
+
       <label for="tal2">Tal 2:</label>
-      <input id="tal2" type="text" name="tal2">
+      <input id="tal2" type="text" name="tal2" />
+      <input id="udregn" type="submit" value="Udregn" />
+        <label for="res">Resultat:</label>
+        <input id="res" type="text" name="res" />
     </form>
-    <Button onclick="regn()">Regn</Button>
-    <p id="res"></p>
+
     <script src="index.js"></script>
   </body>
 </html>
+
