@@ -1,0 +1,45 @@
+* {
+  white-space: nowrap;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100%;
+    grid-row-gap: 10px;
+    justify-content: center;
+    grid-column-gap: 10px;
+    align-content: center;
+}
+p,
+#udregn{
+  grid-column: 1/-1;
+}
+#udregn{
+    width: 100%;
+    border: none;
+    background: teal;
+    color: white;
+    text-transform: uppercase;
+}
+html {
+  height: 100%;
+}
+body {
+  padding: 16px;
+  height: calc(100% - 32px);
+}
+input {
+  border-radius: 3px;
+  border: 0.5px solid lightgray;
+  font-size: 20px;
+}
+label{
+    text-align: left;
+}
+div{
+    width: 100%;
+}
